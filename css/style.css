@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +15,68 @@
 
 html {
   font-family: karla sans-serif;
+}
+
+body {
+  background-color: var(--LightGray);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 340px;
+  width: 60%;
+}
+
+.container .firstSection,
+.container .LeftSection,
+.container .RightSection {
+  padding: 30px;
+}
+
+.container .firstSection {
+  background-color: white;
+}
+
+.container .firstSection .title {
+  color: var(--Cyan);
+  font-size: 1.3em;
+  margin: 0 0 16px 0;
+}
+
+.container .firstSection .subtitle {
+  color: var(--BrightYellow);
+  font-size: 1em;
+  margin: 16px 0;
+}
+
+.container .firstSection .details {
+  color: var(--GrayishBlue);
+  line-height: 1.5;
+  font-size: 0.8em;
+}
+
+.container .LeftSection {
+  background-color: var(--Cyan);
 }
 
 .attribution {
