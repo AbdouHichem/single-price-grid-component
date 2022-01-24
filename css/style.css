@@ -156,6 +156,31 @@ body {
   padding-bottom: 8px;
 }
 
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    max-width: 700px;
+    height: 80%;
+  }
+  .SecondSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .LeftSection, .RightSection {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  button {
+    margin-top: 30px;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
