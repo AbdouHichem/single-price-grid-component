@@ -4,6 +4,7 @@
   --BrightYellow: hsl(71, 73%, 54%);
   --LightGray: hsl(204, 43%, 93%);
   --GrayishBlue: hsl(218, 22%, 67%);
+  --toolightgrey: rgba(229, 239, 245, 0.5);
 }
 
 * {
@@ -43,8 +44,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 340px;
-  width: 60%;
+  max-width: 300px;
+  width: 80%;
+  margin-bottom: 16px;
 }
 
 .container .firstSection,
@@ -77,6 +79,81 @@ body {
 
 .container .LeftSection {
   background-color: var(--Cyan);
+}
+
+.container .LeftSection .leftSectionTitle {
+  color: white;
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+}
+
+.container .LeftSection .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--toolightgrey);
+}
+
+.container .LeftSection .price span {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+  padding-right: 14px;
+}
+
+.container .LeftSection .priceDesription {
+  color: white;
+  margin: 8px 0;
+}
+
+.container .LeftSection .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .LeftSection button {
+  background-color: var(--BrightYellow);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 1px solid var(--BrightYellow);
+  padding: 8px 30%;
+  font-size: 1.1em;
+}
+
+.container .RightSection {
+  --Cyanbg: rgba(42, 178, 175, 0.75);
+  background-color: var(--Cyanbg);
+}
+
+.container .RightSection .rightSectionTitle {
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 16px;
+}
+
+.container .RightSection ul {
+  list-style-type: none;
+  padding: 0;
+  --toolightgrey: rgb(255,255,255,0.7);
+  color: var(--toolightgrey);
+}
+
+.container .RightSection ul li {
+  padding-bottom: 8px;
 }
 
 .attribution {
